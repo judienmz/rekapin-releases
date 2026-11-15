@@ -1,0 +1,16 @@
+{
+  "publishedAt": "2026-11-15T02:38:39.553127Z",
+  "app": {
+    "version": "1.0.0",
+    "build": 1,
+    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.0/Rekapin-Setup-1.0.0.exe",
+    "sha256": "3a34c70ab6306eb9e0119fec621e209b3fd9d869117280e0d68a8812bf7ff946",
+    "size": 13998931,
+    "notes": "Rilis pertama: installer & update otomatis."
+  },
+  "templates": {
+    "version": 2,
+    "url": "https://raw.githubusercontent.com/judienmz/rekapin-releases/main/templates/import_templates.json",
+    "sha256": "a227fd92ab65695e8830bc7618feeb4115e367a57aa4f9146b1bb18c48c4cb30"
+  }
+}

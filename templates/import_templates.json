@@ -1,0 +1,938 @@
+{
+  "version": 2,
+  "updated": "2026-11-12",
+  "templates": [
+    {
+      "id": "shopee_order",
+      "marketplace": "shopee",
+      "kind": "orders",
+      "format": "xlsx",
+      "ownerOnly": false,
+      "label": "Shopee - Pesanan",
+      "sheets": [
+        "orders"
+      ],
+      "columns": {
+        "order_id": {
+          "required": true,
+          "names": [
+            "No. Pesanan",
+            "Order ID"
+          ]
+        },
+        "status": {
+          "required": true,
+          "names": [
+            "Status Pesanan",
+            "Order Status"
+          ]
+        },
+        "cancel_return_status": {
+          "names": [
+            "Status Pembatalan/ Pengembalian",
+            "Return / Refund Status"
+          ]
+        },
+        "cancel_reason": {
+          "names": [
+            "Alasan Pembatalan",
+            "Cancel reason"
+          ]
+        },
+        "tracking_no": {
+          "names": [
+            "No. Resi",
+            "Tracking Number"
+          ]
+        },
+        "created_at": {
+          "required": true,
+          "names": [
+            "Waktu Pesanan Dibuat",
+            "Order Creation Date"
+          ]
+        },
+        "paid_at": {
+          "names": [
+            "Waktu Pembayaran Dilakukan",
+            "Order Paid Time"
+          ]
+        },
+        "ship_arranged_at": {
+          "names": [
+            "Waktu Pengiriman Diatur",
+            "Ship Time"
+          ]
+        },
+        "completed_at": {
+          "names": [
+            "Waktu Pesanan Selesai",
+            "Order Complete Time"
+          ]
+        },
+        "parent_sku": {
+          "names": [
+            "SKU Induk",
+            "Parent SKU Reference No."
+          ]
+        },
+        "product_name": {
+          "required": true,
+          "names": [
+            "Nama Produk",
+            "Product Name"
+          ]
+        },
+        "sku": {
+          "names": [
+            "Nomor Referensi SKU",
+            "SKU Reference No."
+          ]
+        },
+        "variation": {
+          "names": [
+            "Nama Variasi",
+            "Variation Name"
+          ]
+        },
+        "price_original": {
+          "names": [
+            "Harga Awal",
+            "Original Price"
+          ]
+        },
+        "price_deal": {
+          "required": true,
+          "names": [
+            "Harga Setelah Diskon",
+            "Deal Price"
+          ]
+        },
+        "qty": {
+          "required": true,
+          "names": [
+            "Jumlah",
+            "Quantity"
+          ]
+        },
+        "returned_qty": {
+          "names": [
+            "Returned quantity"
+          ]
+        },
+        "subtotal": {
+          "names": [
+            "Subtotal Pesanan",
+            "Product Subtotal"
+          ]
+        },
+        "order_total": {
+          "names": [
+            "Total Pembayaran",
+            "Grand Total"
+          ]
+        }
+      },
+      "pii": [
+        "Username (Pembeli)",
+        "Nama Penerima",
+        "No. Telepon",
+        "Alamat Pengiriman",
+        "Kota/Kabupaten",
+        "Provinsi",
+        "Catatan dari Pembeli",
+        "Username (Buyer)",
+        "Receiver Name",
+        "Phone Number",
+        "Delivery Address",
+        "Town",
+        "District",
+        "City",
+        "Province",
+        "Zip Code",
+        "Remark from buyer"
+      ]
+    },
+    {
+      "id": "tiktok_order",
+      "marketplace": "tiktok",
+      "kind": "orders",
+      "format": "xlsx",
+      "ownerOnly": false,
+      "label": "TikTok Shop - Pesanan",
+      "sheets": [
+        "OrderSKUList"
+      ],
+      "columns": {
+        "order_id": {
+          "required": true,
+          "names": [
+            "Order ID",
+            "ID Pesanan"
+          ]
+        },
+        "status": {
+          "required": true,
+          "names": [
+            "Order Status",
+            "Status Pesanan"
+          ]
+        },
+        "substatus": {
+          "names": [
+            "Order Substatus",
+            "Substatus Pesanan"
+          ]
+        },
+        "cancel_return_type": {
+          "names": [
+            "Cancelation/Return Type",
+            "Cancellation/Return Type"
+          ]
+        },
+        "sku_id": {
+          "required": true,
+          "names": [
+            "SKU ID"
+          ]
+        },
+        "seller_sku": {
+          "names": [
+            "Seller SKU",
+            "SKU Penjual"
+          ]
+        },
+        "product_name": {
+          "required": true,
+          "names": [
+            "Product Name",
+            "Nama Produk"
+          ]
+        },
+        "variation": {
+          "names": [
+            "Variation",
+            "Variasi"
+          ]
+        },
+        "qty": {
+          "required": true,
+          "names": [
+            "Quantity",
+            "Jumlah"
+          ]
+        },
+        "returned_qty": {
+          "names": [
+            "Sku Quantity of return",
+            "SKU Quantity of return"
+          ]
+        },
+        "unit_price_original": {
+          "names": [
+            "SKU Unit Original Price"
+          ]
+        },
+        "subtotal_before_discount": {
+          "names": [
+            "SKU Subtotal Before Discount"
+          ]
+        },
+        "platform_discount": {
+          "names": [
+            "SKU Platform Discount"
+          ]
+        },
+        "seller_discount": {
+          "names": [
+            "SKU Seller Discount"
+          ]
+        },
+        "subtotal_after_discount": {
+          "required": true,
+          "names": [
+            "SKU Subtotal After Discount"
+          ]
+        },
+        "order_refund": {
+          "names": [
+            "Order Refund Amount"
+          ]
+        },
+        "order_amount": {
+          "names": [
+            "Order Amount"
+          ]
+        },
+        "created_at": {
+          "required": true,
+          "names": [
+            "Created Time"
+          ]
+        },
+        "paid_at": {
+          "names": [
+            "Paid Time"
+          ]
+        },
+        "shipped_at": {
+          "names": [
+            "Shipped Time"
+          ]
+        },
+        "delivered_at": {
+          "names": [
+            "Delivered Time"
+          ]
+        },
+        "cancelled_at": {
+          "names": [
+            "Cancelled Time"
+          ]
+        },
+        "tracking_no": {
+          "names": [
+            "Tracking ID"
+          ]
+        },
+        "package_id": {
+          "names": [
+            "Package ID"
+          ]
+        }
+      },
+      "pii": [
+        "Buyer Username",
+        "Recipient",
+        "Phone #",
+        "Zipcode",
+        "Districts",
+        "Villages",
+        "Detail Address",
+        "Additional address information",
+        "Buyer Message"
+      ]
+    },
+    {
+      "id": "shopee_income",
+      "marketplace": "shopee",
+      "kind": "income",
+      "format": "xlsx",
+      "ownerOnly": true,
+      "label": "Shopee - Penghasilan",
+      "sheets": [
+        "Penghasilan"
+      ],
+      "columns": {
+        "order_id": {
+          "required": true,
+          "names": [
+            "No. Pesanan",
+            "Order ID"
+          ]
+        },
+        "row_level": {
+          "required": true,
+          "names": [
+            "Lihat berdasarkan",
+            "View by"
+          ]
+        },
+        "product_id": {
+          "names": [
+            "ID Produk",
+            "Product ID"
+          ]
+        },
+        "product_name": {
+          "names": [
+            "Nama Produk",
+            "Product Name"
+          ]
+        },
+        "created_at": {
+          "names": [
+            "Waktu Pesanan Dibuat",
+            "Order Creation Date"
+          ]
+        },
+        "released_at": {
+          "required": true,
+          "names": [
+            "Tanggal Dana Dilepaskan",
+            "Payout Completed Date"
+          ]
+        },
+        "total_income": {
+          "required": true,
+          "names": [
+            "Total Penghasilan",
+            "Total Released Amount"
+          ]
+        }
+      },
+      "componentsEndGroup": [
+        "Buyer Info",
+        "Informasi Pembeli"
+      ],
+      "pii": [
+        "Username (Pembeli)"
+      ]
+    },
+    {
+      "id": "tiktok_income",
+      "marketplace": "tiktok",
+      "kind": "income",
+      "format": "xlsx",
+      "ownerOnly": true,
+      "label": "TikTok Shop - Penghasilan",
+      "sheets": [
+        "Detail pesanan",
+        "Order details"
+      ],
+      "columns": {
+        "txn_id": {
+          "required": true,
+          "names": [
+            "ID Pesanan/Penyesuaian",
+            "Order/adjustment ID"
+          ]
+        },
+        "txn_type": {
+          "required": true,
+          "names": [
+            "Jenis transaksi",
+            "Type"
+          ]
+        },
+        "ordered_at": {
+          "names": [
+            "Waktu pemesanan",
+            "Order created time"
+          ]
+        },
+        "settled_at": {
+          "required": true,
+          "names": [
+            "Waktu pembayaran pesanan",
+            "Order settled time"
+          ]
+        },
+        "currency": {
+          "required": true,
+          "names": [
+            "Mata uang",
+            "Currency"
+          ]
+        },
+        "settlement_amount": {
+          "required": true,
+          "names": [
+            "Jumlah penyelesaian pembayaran",
+            "Total settlement amount"
+          ]
+        },
+        "total_revenue": {
+          "names": [
+            "Total Pendapatan",
+            "Total revenue"
+          ]
+        },
+        "total_fees": {
+          "names": [
+            "Total Biaya",
+            "Total fees"
+          ]
+        },
+        "adjustment_amount": {
+          "names": [
+            "Jumlah penyesuaian",
+            "Adjustment amount"
+          ]
+        },
+        "related_order": {
+          "names": [
+            "ID pesanan terkait",
+            "Related order ID"
+          ]
+        },
+        "product_detail": {
+          "names": [
+            "Detail produk terjual"
+          ]
+        },
+        "order_source": {
+          "names": [
+            "Sumber pesanan"
+          ]
+        }
+      },
+      "pii": []
+    },
+    {
+      "id": "shopee_ads",
+      "marketplace": "shopee",
+      "kind": "ads",
+      "format": "csv",
+      "ownerOnly": true,
+      "label": "Shopee - Iklan (riwayat saldo iklan)",
+      "sheets": [
+        "csv"
+      ],
+      "columns": {
+        "seq": {
+          "required": true,
+          "names": [
+            "Urutan",
+            "No."
+          ]
+        },
+        "date": {
+          "required": true,
+          "names": [
+            "Waktu",
+            "Time"
+          ]
+        },
+        "description": {
+          "required": true,
+          "names": [
+            "Deskripsi",
+            "Description"
+          ]
+        },
+        "amount": {
+          "required": true,
+          "names": [
+            "Jumlah",
+            "Amount"
+          ]
+        },
+        "note": {
+          "names": [
+            "Catatan",
+            "Note"
+          ]
+        }
+      },
+      "pii": []
+    }
+  ],
+  "tiktokTxnTypes": {
+    "Pesanan": "order",
+    "Order": "order",
+    "Pembayaran GMV untuk Iklan TikTok": "ads",
+    "Pencairan Penyelesaian Pembayaran di Muka": "saldo_cepat_in",
+    "Pengembalian dana untuk Penyelesaian Pembayaran di Muka": "saldo_cepat_out",
+    "Penggantian Biaya Logistik": "adjustment",
+    "Penyesuaian komisi platform": "adjustment",
+    "Other adjustment": "adjustment",
+    "Biaya paket manfaat pemasaran": "marketing_fee",
+    "Biaya paket keuntungan pemasaran tambahan": "marketing_fee"
+  },
+  "shopeeAdsDescriptions": {
+    "spend": [
+      "Deduction for Product Ad",
+      "Potongan untuk Iklan",
+      "Deduction"
+    ],
+    "topup": [
+      "Isi Saldo",
+      "Top Up",
+      "Top-up"
+    ]
+  },
+  "feeTypes": [
+    {
+      "code": "gross_product",
+      "category": "revenue",
+      "names": [
+        "Harga Produk",
+        "Subtotal sebelum diskon"
+      ],
+      "label": "Harga produk",
+      "explain": "Harga jual produk sebelum potongan biaya marketplace. Ini titik awal perhitungan dana yang kamu terima."
+    },
+    {
+      "code": "seller_discount",
+      "category": "discount",
+      "names": [
+        "Diskon penjual"
+      ],
+      "label": "Diskon dari penjual",
+      "explain": "Diskon yang kamu (penjual) berikan langsung di harga produk. Mengurangi pendapatan."
+    },
+    {
+      "code": "refund",
+      "category": "refund",
+      "names": [
+        "Jumlah Pengembalian Dana ke Pembeli",
+        "Total pengembalian dana sebelum diskon",
+        "Subtotal pengembalian dana sebelum diskon penjual"
+      ],
+      "label": "Pengembalian dana ke pembeli",
+      "explain": "Uang yang dikembalikan ke pembeli karena retur/refund. Mengurangi pendapatan pesanan itu."
+    },
+    {
+      "code": "refund_seller_discount",
+      "category": "refund",
+      "names": [
+        "Pengembalian dana diskon penjual"
+      ],
+      "label": "Pengembalian diskon penjual (atas refund)",
+      "explain": "Bagian diskon penjual yang ikut kembali saat terjadi refund (mengurangi potongan refund)."
+    },
+    {
+      "code": "horizon_product_fee",
+      "category": "revenue",
+      "names": [
+        "Biaya produk sesuai jarak dari Program Horison+"
+      ],
+      "label": "Biaya produk program Horison+",
+      "explain": "Tambahan harga produk dari program pengiriman jarak jauh (Horison+) TikTok."
+    },
+    {
+      "code": "shipping_buyer_paid",
+      "category": "shipping",
+      "names": [
+        "Ongkir Dibayar Pembeli",
+        "Ongkir yang ditanggung pembeli"
+      ],
+      "label": "Ongkir dibayar pembeli",
+      "explain": "Ongkir yang dibayar pembeli. Diteruskan ke jasa kirim, biasanya tidak mengubah laba."
+    },
+    {
+      "code": "shipping_paid_to_courier",
+      "category": "shipping",
+      "names": [
+        "Ongkos Kirim yang Dibayarkan ke Jasa Kirim",
+        "Ongkir yang ditalangi penyedia jasa logistik"
+      ],
+      "label": "Ongkir ke jasa kirim",
+      "explain": "Ongkir yang dibayarkan marketplace ke kurir atas nama kamu."
+    },
+    {
+      "code": "shipping_courier_discount",
+      "category": "shipping",
+      "names": [
+        "Potongan Ongkos Kirim dari Jasa Kirim"
+      ],
+      "label": "Potongan ongkir dari jasa kirim",
+      "explain": "Potongan ongkir dari jasa kirim yang mengurangi beban ongkir."
+    },
+    {
+      "code": "shipping_platform_subsidy",
+      "category": "shipping",
+      "names": [
+        "Gratis Ongkir dari Shopee",
+        "Ongkir yang ditanggung platform",
+        "Subsidi ongkir"
+      ],
+      "label": "Subsidi ongkir platform",
+      "explain": "Ongkir yang ditanggung marketplace (program gratis ongkir). Menutup sebagian ongkir ke kurir."
+    },
+    {
+      "code": "return_shipping",
+      "category": "shipping",
+      "names": [
+        "Ongkos Kirim Pengembalian Barang",
+        "Ongkir pengembalian barang (yang ditanggung pembeli)",
+        "Ongkir pengembalian barang karena kesalahan pembeli"
+      ],
+      "label": "Ongkir pengembalian barang",
+      "explain": "Ongkir untuk mengirim barang retur kembali ke kamu."
+    },
+    {
+      "code": "return_to_seller_fee",
+      "category": "shipping",
+      "names": [
+        "Return to Seller Fee",
+        "Ongkir pesanan gagal kirim"
+      ],
+      "label": "Ongkir gagal kirim / kembali ke penjual",
+      "explain": "Ongkir paket gagal kirim yang kembali ke penjual."
+    },
+    {
+      "code": "shipping_refund",
+      "category": "shipping",
+      "names": [
+        "Pengembalian Biaya Kirim",
+        "Pengembalian ongkir yang dibayar pembeli",
+        "Pengembalian ongkir yang ditanggung pembeli"
+      ],
+      "label": "Pengembalian ongkir",
+      "explain": "Ongkir yang dikembalikan ke pembeli karena retur/refund."
+    },
+    {
+      "code": "shipping_replacement",
+      "category": "shipping",
+      "names": [
+        "Ongkir penggantian (ditanggung pembeli)",
+        "Ongkir penukaran (ditanggung pembeli)"
+      ],
+      "label": "Ongkir penggantian/penukaran",
+      "explain": "Ongkir untuk penggantian atau penukaran barang."
+    },
+    {
+      "code": "logistics_service_fee",
+      "category": "fee",
+      "names": [
+        "Biaya layanan logistik",
+        "Biaya pengiriman sesuai jarak dari Program Horison+"
+      ],
+      "label": "Biaya layanan logistik",
+      "explain": "Biaya layanan logistik dari marketplace di luar ongkir kurir."
+    },
+    {
+      "code": "insurance_reimbursement",
+      "category": "shipping",
+      "names": [
+        "Insurance reimbursement",
+        "Penggantian dana asuransi"
+      ],
+      "label": "Penggantian asuransi",
+      "explain": "Penggantian dari asuransi pengiriman, misalnya paket hilang atau rusak."
+    },
+    {
+      "code": "seller_voucher",
+      "category": "discount",
+      "names": [
+        "Voucher disponsor oleh Penjual"
+      ],
+      "label": "Voucher penjual",
+      "explain": "Voucher toko yang kamu tanggung sendiri."
+    },
+    {
+      "code": "seller_coin_cashback",
+      "category": "discount",
+      "names": [
+        "Cashback Koin disponsori Penjual"
+      ],
+      "label": "Cashback koin penjual",
+      "explain": "Cashback koin yang kamu tanggung sebagai penjual."
+    },
+    {
+      "code": "platform_product_discount",
+      "category": "discount",
+      "names": [
+        "Diskon Produk dari Shopee"
+      ],
+      "label": "Diskon produk dari Shopee",
+      "explain": "Diskon produk yang ditanggung Shopee (biasanya menambah pendapatanmu kembali)."
+    },
+    {
+      "code": "seller_voucher_cofund",
+      "category": "discount",
+      "names": [
+        "Voucher co-fund disponsor oleh Penjual"
+      ],
+      "label": "Voucher co-fund penjual",
+      "explain": "Bagian voucher co-funding yang ditanggung penjual."
+    },
+    {
+      "code": "seller_coin_cofund",
+      "category": "discount",
+      "names": [
+        "Cashback Koin Co-fund disponsori Penjual"
+      ],
+      "label": "Cashback koin co-fund penjual",
+      "explain": "Bagian cashback koin co-funding yang ditanggung penjual."
+    },
+    {
+      "code": "admin_fee",
+      "category": "fee",
+      "names": [
+        "Biaya Administrasi"
+      ],
+      "label": "Biaya administrasi",
+      "explain": "Biaya administrasi (komisi dasar) marketplace, persentase dari harga jual. Biasanya pos biaya terbesar."
+    },
+    {
+      "code": "order_processing_fee",
+      "category": "fee",
+      "names": [
+        "Biaya Proses Pesanan",
+        "Biaya pemrosesan pesanan"
+      ],
+      "label": "Biaya proses pesanan",
+      "explain": "Biaya tetap per pesanan yang diproses marketplace."
+    },
+    {
+      "code": "free_shipping_program_fee",
+      "category": "fee",
+      "names": [
+        "Biaya Gratis Ongkir XTRA*",
+        "Biaya layanan Program Bebas Ongkir"
+      ],
+      "label": "Biaya program gratis ongkir",
+      "explain": "Biaya ikut program gratis ongkir (Gratis Ongkir XTRA / Bebas Ongkir). Ditukar dengan subsidi ongkir untuk pembeli."
+    },
+    {
+      "code": "transaction_fee",
+      "category": "fee",
+      "names": [
+        "Biaya Transaksi",
+        "Biaya Pembayaran",
+        "Credit card installment - Handling fee"
+      ],
+      "label": "Biaya transaksi/pembayaran",
+      "explain": "Biaya transaksi pembayaran (payment gateway, kartu kredit, cicilan)."
+    },
+    {
+      "code": "promo_program_fee",
+      "category": "fee",
+      "names": [
+        "Biaya Layanan Promo XTRA",
+        "Biaya layanan Program Growth Xtra",
+        "Biaya layanan Growth Xtra Program Super",
+        "Biaya layanan Program EAMS",
+        "Biaya layanan Brands Crazy Deal/Flash Sale",
+        "Biaya layanan cashback bonus"
+      ],
+      "label": "Biaya program promo",
+      "explain": "Biaya ikut program promo (Promo XTRA, Growth Xtra, cashback bonus, flash sale)."
+    },
+    {
+      "code": "campaign_fee",
+      "category": "fee",
+      "names": [
+        "Biaya Kampanye",
+        "Biaya sumber daya campaign"
+      ],
+      "label": "Biaya kampanye",
+      "explain": "Biaya ikut kampanye marketplace (tanggal kembar, payday, dll)."
+    },
+    {
+      "code": "affiliate_commission",
+      "category": "fee",
+      "names": [
+        "Biaya Komisi AMS",
+        "Komisi Afiliasi",
+        "Komisi mitra afiliasi",
+        "Komisi Iklan Toko afiliasi",
+        "Komisi iklan toko Mitra Afiliasi",
+        "Deposit komisi afiliasi",
+        "Pengembalian dana komisi afiliasi"
+      ],
+      "label": "Komisi affiliate",
+      "explain": "Komisi untuk affiliate / kreator yang membawa penjualan."
+    },
+    {
+      "code": "platform_commission",
+      "category": "fee",
+      "names": [
+        "Biaya komisi platform",
+        "Komisi dinamis"
+      ],
+      "label": "Komisi platform",
+      "explain": "Komisi platform TikTok Shop, termasuk komisi dinamis."
+    },
+    {
+      "code": "mall_fee",
+      "category": "fee",
+      "names": [
+        "Biaya layanan Mall",
+        "Biaya layanan pre-order",
+        "Biaya layanan Khusus LIVE",
+        "Biaya layanan khusus platform",
+        "Biaya akses keuntungan eksklusif"
+      ],
+      "label": "Biaya layanan khusus",
+      "explain": "Biaya layanan khusus: Mall, pre-order, LIVE, atau program eksklusif lain."
+    },
+    {
+      "code": "paylater_fee",
+      "category": "fee",
+      "names": [
+        "SPayLater Xtra 0% Service Fee",
+        "Biaya program PayLater"
+      ],
+      "label": "Biaya PayLater",
+      "explain": "Biaya layanan PayLater (SPayLater / PayLater TikTok) yang ditanggung penjual."
+    },
+    {
+      "code": "insurance_premium",
+      "category": "fee",
+      "names": [
+        "Premi",
+        "Insurance fee",
+        "Biaya asuransi"
+      ],
+      "label": "Premi & biaya lainnya",
+      "explain": "Premi asuransi pengiriman. Di Shopee, kolom Premi per pesanan juga mencakup Biaya Program Hemat Biaya Kirim (di Summary keduanya muncul sebagai Biaya Lainnya)."
+    },
+    {
+      "code": "fulfillment_fee",
+      "category": "fee",
+      "names": [
+        "FBS Fee",
+        "Biaya Dilayani Tokopedia",
+        "Biaya penanganan Dilayani Tokopedia",
+        "Biaya layanan gudang",
+        "Biaya layanan penginstalan"
+      ],
+      "label": "Biaya fulfillment",
+      "explain": "Biaya fulfillment / gudang marketplace (FBS, Dilayani Tokopedia)."
+    },
+    {
+      "code": "ads_auto_topup",
+      "category": "transfer",
+      "names": [
+        "Biaya Isi Saldo Otomatis (dari Penghasilan)"
+      ],
+      "label": "Isi saldo iklan otomatis (transfer)",
+      "explain": "Isi saldo iklan otomatis dari penghasilan. Ini perpindahan uang ke saldo iklan, bukan biaya. Biaya iklan dihitung dari laporan iklan."
+    },
+    {
+      "code": "gmv_max_ads",
+      "category": "ads",
+      "names": [
+        "Biaya iklan GMV Max",
+        "Voucher GMV Max",
+        "Pajak penjualan atas voucher GMV Max"
+      ],
+      "label": "Iklan GMV Max",
+      "explain": "Biaya iklan GMV Max yang dipotong dari penghasilan TikTok."
+    },
+    {
+      "code": "managed_service",
+      "category": "fee",
+      "names": [
+        "Program layanan terkelola (Pajak penjualan)",
+        "Program layanan terkelola (Biaya per pesanan)"
+      ],
+      "label": "Program layanan terkelola",
+      "explain": "Biaya program layanan terkelola TikTok."
+    },
+    {
+      "code": "tax_pph22",
+      "category": "tax",
+      "names": [
+        "PPh 22",
+        "PPh Pasal 22 dipungut"
+      ],
+      "label": "PPh 22",
+      "explain": "Pajak PPh Pasal 22 yang dipungut marketplace dari penjualan."
+    }
+  ],
+  "extraFeeTypes": [
+    {
+      "code": "adjustment",
+      "category": "adjustment",
+      "label": "Penyesuaian",
+      "explain": "Penyesuaian dari marketplace: kompensasi, penggantian biaya logistik, koreksi komisi, dll."
+    },
+    {
+      "code": "marketing_package",
+      "category": "fee",
+      "label": "Paket pemasaran",
+      "explain": "Biaya paket manfaat / keuntungan pemasaran TikTok."
+    },
+    {
+      "code": "saldo_cepat",
+      "category": "transfer",
+      "label": "Saldo Cepat",
+      "explain": "Dana talangan TikTok (dicairkan lebih awal, dilunasi otomatis). Bukan pendapatan. Biaya layanannya sekitar 0,5% dari nominal yang dicairkan."
+    }
+  ]
+}

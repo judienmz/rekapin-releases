@@ -1,12 +1,12 @@
 {
-  "publishedAt": "2026-11-15T18:28:28.605715Z",
+  "publishedAt": "2026-11-15T19:23:44.592503Z",
   "app": {
-    "version": "1.0.2",
-    "build": 3,
-    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.2/Rekapin-Setup-1.0.2.exe",
-    "sha256": "64594fc6c3834f0da438238ff92caa7f5cc3d1a34b1cff7fb50b87aefa6eba39",
-    "size": 14238756,
-    "notes": "Tampilan baru: Beranda dengan grafik & ringkasan, sidebar berkelompok, halaman lebih rapi. Varian isi 2/3 pcs & paket campuran saat menghubungkan SKU, HPP terlihat di SKU master, AI memilih model yang tersedia otomatis, peringatan file iklan Shopee yang hanya berisi Isi Saldo, insight rugi setelah iklan lebih akurat."
+    "version": "1.0.3",
+    "build": 4,
+    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.3/Rekapin-Setup-1.0.3.exe",
+    "sha256": "84e546b2266d981f184428eb92768b1be870036c76d3f9222d47d57868f76cc0",
+    "size": 14250839,
+    "notes": "Tampilan baru di semua halaman: dropdown & hover baru, panel notifikasi di lonceng, Laporan dengan ringkasan, Stok/Produk/Insight lebih rapi. Mini App: peringatan lama yang sudah selesai tidak muncul lagi."
   },
   "templates": {
     "version": 2,

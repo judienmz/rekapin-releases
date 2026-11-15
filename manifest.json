@@ -1,12 +1,12 @@
 {
-  "publishedAt": "2026-11-15T05:43:09.730282Z",
+  "publishedAt": "2026-11-15T18:28:28.605715Z",
   "app": {
-    "version": "1.0.1",
-    "build": 2,
-    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.1/Rekapin-Setup-1.0.1.exe",
-    "sha256": "e23734da030a775a4c1e23de47e2a270f6782c9d18ff5f1afb850e3670f77a92",
-    "size": 13996775,
-    "notes": "Ganti token bot lebih mudah: Putuskan tetap jalan walau token sudah dicabut, dan token Cloudflare tersimpan dipakai ulang saat memasang Mode 24 Jam."
+    "version": "1.0.2",
+    "build": 3,
+    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.2/Rekapin-Setup-1.0.2.exe",
+    "sha256": "64594fc6c3834f0da438238ff92caa7f5cc3d1a34b1cff7fb50b87aefa6eba39",
+    "size": 14238756,
+    "notes": "Tampilan baru: Beranda dengan grafik & ringkasan, sidebar berkelompok, halaman lebih rapi. Varian isi 2/3 pcs & paket campuran saat menghubungkan SKU, HPP terlihat di SKU master, AI memilih model yang tersedia otomatis, peringatan file iklan Shopee yang hanya berisi Isi Saldo, insight rugi setelah iklan lebih akurat."
   },
   "templates": {
     "version": 2,

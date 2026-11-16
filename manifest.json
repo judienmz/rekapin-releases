@@ -1,12 +1,12 @@
 {
-  "publishedAt": "2026-11-15T19:23:44.592503Z",
+  "publishedAt": "2026-11-16T02:30:29.837303Z",
   "app": {
-    "version": "1.0.3",
-    "build": 4,
-    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.3/Rekapin-Setup-1.0.3.exe",
-    "sha256": "84e546b2266d981f184428eb92768b1be870036c76d3f9222d47d57868f76cc0",
-    "size": 14250839,
-    "notes": "Tampilan baru di semua halaman: dropdown & hover baru, panel notifikasi di lonceng, Laporan dengan ringkasan, Stok/Produk/Insight lebih rapi. Mini App: peringatan lama yang sudah selesai tidak muncul lagi."
+    "version": "1.0.4",
+    "build": 5,
+    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.4/Rekapin-Setup-1.0.4.exe",
+    "sha256": "08eb14f6f0e9e69c14563644d83a19f5b8179a18785500d884bbc6eb65a61a6d",
+    "size": 14551770,
+    "notes": "Poles tampilan: menu dalam halaman bergaya pil, peringatan & notifikasi bisa diklik dengan rincian, akun toko dipisah per marketplace, profil bisnis untuk kop PDF/Excel, export PDF & Excel baru, best seller di Beranda, nilai stok, batalkan opname, tutup buku per tahun, halaman Telegram & Asisten AI lebih rapi, perbaikan kedip abu-abu saat hover."
   },
   "templates": {
     "version": 2,

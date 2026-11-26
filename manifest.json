@@ -1,12 +1,12 @@
 {
-  "publishedAt": "2026-11-26T04:06:49.280388Z",
+  "publishedAt": "2026-11-26T04:28:42.488993Z",
   "app": {
-    "version": "1.0.6",
-    "build": 7,
-    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.6/Rekapin-Setup-1.0.6.exe",
-    "sha256": "b887649a82a11569ba66713d4ed17bd63f39ed4ce38fa7eebd7a2f06a21644d8",
-    "size": 14678454,
-    "notes": "Mini App baru: tampilan baru, Laporan (omzet, laba estimasi/aktual/bersih, iklan, retur, arus kas), Kas & Biaya dari HP (owner: catat, setujui catatan admin, biaya rutin; admin: catat pengeluaran). Tombol Buka App di chat bot. Laba bersih di /laba, rekap mingguan/bulanan dan PDF bulanan. Worker diperbarui otomatis ke v8."
+    "version": "1.0.7",
+    "build": 8,
+    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.7/Rekapin-Setup-1.0.7.exe",
+    "sha256": "448b64286cdf6e073dc39bf9730ad9849250125c9f153ce51a1092a43a0666c9",
+    "size": 14688697,
+    "notes": "Saran stok minimum otomatis dari penjualan (sekali klik), rekap stok harian ke Grup Operasional (jam bisa diatur), peringatan restock digabung satu pesan per hari, peringatan bulan ini rugi dan dana belum cair lebih dari 14 hari. Worker diperbarui otomatis ke v9. Panduan: lihat PANDUAN.md di repo ini."
   },
   "templates": {
     "version": 2,

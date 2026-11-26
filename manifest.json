@@ -1,12 +1,12 @@
 {
-  "publishedAt": "2026-11-26T13:12:58.777733Z",
+  "publishedAt": "2026-11-26T18:58:40.184838Z",
   "app": {
-    "version": "1.0.8",
-    "build": 9,
-    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.8/Rekapin-Setup-1.0.8.exe",
-    "sha256": "914f888c3b2ced51a17bdf03227ac03f591ce8874998ed9def97b0c5391fa0e8",
-    "size": 14689310,
-    "notes": "Semua pesan bot (rekap, peringatan, format file berubah, import, opname, perintah) lebih rapi dan enak dibaca, termasuk jawaban AI. Dialog Hubungkan SKU baru. Mode 24 Jam: akun Cloudflare baru tidak lagi gagal saat alamat workers.dev belum aktif, tersambung otomatis. Pesan jelas saat token bot ditolak. Worker diperbarui otomatis ke v10."
+    "version": "1.0.9",
+    "build": 10,
+    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.9/Rekapin-Setup-1.0.9.exe",
+    "sha256": "960cdb37e6c78fe2e9a6a8f7897ce89e01f91bd99b1d0bde5f74c2e856ed3ec6",
+    "size": 14693177,
+    "notes": "Mode 24 Jam lebih andal untuk data besar: sinkron ke Cloudflare dipecah kecil-kecil dan hanya mengirim yang berubah (tetap muat paket gratis), perbaikan error HTTP 500 saat banyak peringatan, peringatan lama tidak dikirim beruntun saat bot baru disambungkan, pesan peringatan selalu muat di Telegram. Worker otomatis diperbarui ke v12."
   },
   "templates": {
     "version": 2,

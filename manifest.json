@@ -1,12 +1,12 @@
 {
-  "publishedAt": "2026-11-16T02:30:29.837303Z",
+  "publishedAt": "2026-11-26T03:35:40.523973Z",
   "app": {
-    "version": "1.0.4",
-    "build": 5,
-    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.4/Rekapin-Setup-1.0.4.exe",
-    "sha256": "08eb14f6f0e9e69c14563644d83a19f5b8179a18785500d884bbc6eb65a61a6d",
-    "size": 14551770,
-    "notes": "Poles tampilan: menu dalam halaman bergaya pil, peringatan & notifikasi bisa diklik dengan rincian, akun toko dipisah per marketplace, profil bisnis untuk kop PDF/Excel, export PDF & Excel baru, best seller di Beranda, nilai stok, batalkan opname, tutup buku per tahun, halaman Telegram & Asisten AI lebih rapi, perbaikan kedip abu-abu saat hover."
+    "version": "1.0.5",
+    "build": 6,
+    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.5/Rekapin-Setup-1.0.5.exe",
+    "sha256": "940488d1db925bf80505d822b66e18d97dc7687a76725b729e1e71a6e7a494a2",
+    "size": 14658242,
+    "notes": "Baru: menu Kas & Biaya (rekening bank/e-wallet/kas tunai, kas masuk/keluar/transfer, biaya operasional, biaya rutin dengan pengingat, persetujuan pengeluaran dari admin). Laporan: kartu Laba bersih dan tab Arus Kas, ikut di PDF/Excel. Stok masuk bisa sekalian mencatat pembayarannya."
   },
   "templates": {
     "version": 2,

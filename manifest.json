@@ -1,12 +1,12 @@
 {
-  "publishedAt": "2026-11-26T18:58:40.184838Z",
+  "publishedAt": "2026-11-26T19:31:59.000611Z",
   "app": {
-    "version": "1.0.9",
-    "build": 10,
-    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.9/Rekapin-Setup-1.0.9.exe",
-    "sha256": "960cdb37e6c78fe2e9a6a8f7897ce89e01f91bd99b1d0bde5f74c2e856ed3ec6",
-    "size": 14693177,
-    "notes": "Mode 24 Jam lebih andal untuk data besar: sinkron ke Cloudflare dipecah kecil-kecil dan hanya mengirim yang berubah (tetap muat paket gratis), perbaikan error HTTP 500 saat banyak peringatan, peringatan lama tidak dikirim beruntun saat bot baru disambungkan, pesan peringatan selalu muat di Telegram. Worker otomatis diperbarui ke v12."
+    "version": "1.0.10",
+    "build": 11,
+    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.10/Rekapin-Setup-1.0.10.exe",
+    "sha256": "cf8c9d5ed004d171bc62f5c8436443df50f675b8bcbe32287a621f72016c27b6",
+    "size": 14694092,
+    "notes": "Laba bersih di Mini App dan /laba kini sama dengan aplikasi (laba aktual baru dipakai setelah ada dana cair). Owner bisa opname tanpa persetujuan: di aplikasi PC cukup sekali klik 'Selesai & koreksi stok', di Mini App stok langsung dikoreksi. Worker otomatis diperbarui ke v13."
   },
   "templates": {
     "version": 2,

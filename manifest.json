@@ -1,12 +1,12 @@
 {
-  "publishedAt": "2026-11-26T03:35:40.523973Z",
+  "publishedAt": "2026-11-26T04:06:49.280388Z",
   "app": {
-    "version": "1.0.5",
-    "build": 6,
-    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.5/Rekapin-Setup-1.0.5.exe",
-    "sha256": "940488d1db925bf80505d822b66e18d97dc7687a76725b729e1e71a6e7a494a2",
-    "size": 14658242,
-    "notes": "Baru: menu Kas & Biaya (rekening bank/e-wallet/kas tunai, kas masuk/keluar/transfer, biaya operasional, biaya rutin dengan pengingat, persetujuan pengeluaran dari admin). Laporan: kartu Laba bersih dan tab Arus Kas, ikut di PDF/Excel. Stok masuk bisa sekalian mencatat pembayarannya."
+    "version": "1.0.6",
+    "build": 7,
+    "url": "https://github.com/judienmz/rekapin-releases/releases/download/v1.0.6/Rekapin-Setup-1.0.6.exe",
+    "sha256": "b887649a82a11569ba66713d4ed17bd63f39ed4ce38fa7eebd7a2f06a21644d8",
+    "size": 14678454,
+    "notes": "Mini App baru: tampilan baru, Laporan (omzet, laba estimasi/aktual/bersih, iklan, retur, arus kas), Kas & Biaya dari HP (owner: catat, setujui catatan admin, biaya rutin; admin: catat pengeluaran). Tombol Buka App di chat bot. Laba bersih di /laba, rekap mingguan/bulanan dan PDF bulanan. Worker diperbarui otomatis ke v8."
   },
   "templates": {
     "version": 2,
